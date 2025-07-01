@@ -24,18 +24,20 @@ The network is designed using best practices in routing, switching, VLAN segment
 
 ---
 
-## 🧱 Network Features
+## 🎯 VLAN Structure
 
-- **VLAN Segmentation by Service**
-  - VLAN 10: Management
-  - VLAN 20: POS
-  - VLAN 30: CCTV
-  - VLAN 40: VoIP
-  - VLAN 50: Staff Wi-Fi
-  - VLAN 60: Customer Wi-Fi
-  - VLAN 70: Digital Ads
-  - VLAN 80: ATM/Banking
-  - VLAN 90: Delivery
+| **VLAN ID** | **Name**         | **Purpose**                                        |
+|-------------|------------------|----------------------------------------------------|
+| 10          | Management        | Admin access, network operation center (NOC)       |
+| 20          | POS               | Point of Sale systems (billing, checkout devices) |
+| 30          | CCTV              | Security cameras and NVR systems                  |
+| 40          | VoIP              | IP telephony and SIP devices                      |
+| 50          | Staff Wi-Fi       | Secure wireless access for internal staff         |
+| 60          | Customer Wi-Fi    | Open wireless for customers/guests                |
+| 70          | Digital Ads       | Digital signage, LED panels, advertisement kiosks |
+| 80          | ATM/Banking       | Banking systems, ATMs, third-party payment links  |
+| 90          | Delivery/Orders   | Logistics, order tracking, inventory mobility     |
+
 
 - **IP Addressing Plan**
   - Unique subnets assigned to each VLAN per outlet
